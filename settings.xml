@@ -1,0 +1,35 @@
+<settings>
+
+    <servers>
+    <server>
+        <id>rush-rush-devops-cicd</id>
+        <username>aws</username>
+        <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+    </server>
+    </servers>
+
+    <profiles>
+    <profile>
+        <id>rush-rush-devops-cicd</id>
+        <activation>
+          <activeByDefault>true</activeByDefault>
+        </activation>
+        <repositories>
+          <repository>
+            <id>rush-rush-devops-cicd</id>
+            <url>https://rush-508526124417.d.codeartifact.us-west-2.amazonaws.com/maven/rush-devops-cicd/</url>
+          </repository>
+        </repositories>
+    </profile>
+    </profiles>
+
+    <mirrors>
+      <mirror>
+        <id>rush-rush-devops-cicd</id>
+        <name>rush-rush-devops-cicd</name>
+        <url>https://rush-508526124417.d.codeartifact.us-west-2.amazonaws.com/maven/rush-devops-cicd/</url>
+        <mirrorOf>*</mirrorOf>
+      </mirror>
+    </mirrors>
+
+</settings>
