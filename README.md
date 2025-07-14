@@ -1,4 +1,4 @@
-# Legendary AWS DevOps Project 🚀
+# AWS DevOps Project 🚀
 
 This project showcases a complete end-to-end CI/CD pipeline using AWS Developer Tools to deploy a Java web application on an EC2 instance. The pipeline is designed to automate every phase of software delivery — from coding to deployment — using tools like CodeArtifact, CodeBuild, CodeDeploy, and CodePipeline.
 
